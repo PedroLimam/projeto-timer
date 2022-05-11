@@ -44,5 +44,6 @@ document.addEventListener("click", function(e){
         segundos = 0
         pausar.classList.remove('pausado')
         containerTimer.style.animationName = "none"
+        iniciar.textContent = "Iniciar"
     }
 })
