@@ -9,6 +9,7 @@ let timer;
 let segundos = 0
 const relogio = document.querySelector(".relogio")
 const pausar = document.querySelector(".pausar")
+const iniciar = document.querySelector(".iniciar")
 const containerTimer = document.querySelector(".container-timer")
 
 function iniciaRelogio(){
@@ -27,12 +28,14 @@ document.addEventListener("click", function(e){
         iniciaRelogio()
         pausar.classList.remove('pausado')
         containerTimer.style.animationName = "none"
+        iniciar.textContent = "Iniciar"
     }
 
     if( elClick.classList.contains('pausar')){
         clearInterval(timer)
         pausar.classList.add('pausado')
         containerTimer.style.animationName = "alert"
+        iniciar.textContent = "Reiniciar"
     } 
 
     if(elClick.classList.contains('zerar')){
