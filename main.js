@@ -34,8 +34,8 @@ document.addEventListener("click", function(e){
     if( elClick.classList.contains('pausar')){
         clearInterval(timer)
         pausar.classList.add('pausado')
-        containerTimer.style.animationName = "alert"
-        iniciar.textContent = "Reiniciar"
+        containerTimer.style.cssText = "animation-name: alert;"
+        iniciar.textContent = "Retomar"
     } 
 
     if(elClick.classList.contains('zerar')){
