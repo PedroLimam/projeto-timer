@@ -27,7 +27,7 @@ document.addEventListener("click", function(e){
         clearInterval(timer)
         iniciaRelogio()
         pausar.classList.remove('pausado')
-        containerTimer.style.animationName = "none"
+        containerTimer.style.removeProperty("animation-name")
         iniciar.textContent = "Iniciar"
     }
 
@@ -43,7 +43,7 @@ document.addEventListener("click", function(e){
         relogio.innerHTML = "00:00:00"
         segundos = 0
         pausar.classList.remove('pausado')
-        containerTimer.style.animationName = "none"
+        containerTimer.style.removeProperty("animation-name")
         iniciar.textContent = "Iniciar"
     }
 })
